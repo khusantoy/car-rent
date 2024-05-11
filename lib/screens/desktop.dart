@@ -366,7 +366,7 @@ class DesktopScreen extends StatelessWidget {
                           SizedBox(
                             height: screenW * 0.03,
                           ),
-                          Container(
+                          SizedBox(
                             width: screenW * 0.3,
                             child: Text(
                               'NISMO has become the embodiment of Nissans outstanding performance, inspired by the most unforgiving proving ground, the "race track".',
@@ -568,41 +568,39 @@ class DesktopScreen extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      margin: EdgeInsets.only(
-                                          right: screenW * 0.01),
-                                      width: screenW * 0.03,
-                                      height: screenW * 0.03,
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  'assets/images/man.png'),
-                                              fit: BoxFit.cover)),
-                                    ),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Alex Stanton',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: screenW * 0.01),
-                                        ),
-                                        Text(
-                                          'CEO at Bukalapak',
-                                          style: TextStyle(
-                                              color: Colors.grey,
-                                              fontSize: screenW * 0.007),
-                                        )
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                              Row(
+                                children: [
+                                  Container(
+                                    margin:
+                                        EdgeInsets.only(right: screenW * 0.01),
+                                    width: screenW * 0.03,
+                                    height: screenW * 0.03,
+                                    decoration: const BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/images/man.png'),
+                                            fit: BoxFit.cover)),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Alex Stanton',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: screenW * 0.01),
+                                      ),
+                                      Text(
+                                        'CEO at Bukalapak',
+                                        style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: screenW * 0.007),
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.end,
